@@ -1,0 +1,176 @@
+/* App.css */
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.child-div {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  width: 400px;
+  overflow: auto;
+}
+
+.heading {
+  color: #007bff;
+  text-align: center;
+}
+.addItems {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.addItems input {
+  width: calc(100% - 40px); /* Adjusted padding */
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding-right: 40px; 
+  transition: border-color 0.3s; 
+}
+
+.addItems input:hover {
+  border-color:#007bff; 
+}
+
+
+.addItems input::placeholder {
+  color: #aaa;
+}
+
+.add-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 10px; /* Added unit (px) */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #555;
+
+}
+
+.add-btn:hover {
+  background-color: #007bff;
+  color: rgb(253, 254, 253);
+  border-radius: 5px;
+  padding:3px;
+
+}
+
+.delete-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 0px; 
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #555;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+
+.showItems {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  /* margin: 20px; */
+  
+}
+/* .eachItem h3:hover {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+} */
+.eachItem:hover {
+  background-color: white;
+  color: #007bff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.eachItem {
+  display: flex; /* Added */
+  align-items: center; /* Added */
+  justify-content: space-between; /* Added */
+  position: relative; /* Added */
+  margin-bottom: 10px; /* Adjusted */
+  width: 94%;
+  height: 30px;
+  margin: 10px;
+  
+}
+
+.eachItem h3 {
+  margin: 0;
+  flex: 1; /* Added */
+
+}
+
+
+.eachItem:hover .delete-btn {
+  color: rgb(255, 255, 255);
+  color: red;
+}
+.check-btn {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.effect04 {
+  position: relative;
+  overflow: hidden;
+}
+
+.effect04::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  transition: all 0.1s;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.effect04:hover::before {
+  width: 0;
+  height: 0;
+}
+
+.checkbox {
+  margin-right: 10px;
+  size: 5px;
+}
