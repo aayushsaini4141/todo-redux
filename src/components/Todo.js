@@ -14,7 +14,7 @@ export const Todo = () => {
   // Load data from local storage when the component mounts
   useEffect(() => {
     const storedList = localStorage.getItem('todoList');
-    if (storedList != "[]") {
+    if (storedList !== "[]") {
       dispatch({ type: 'LOAD_TODO_LIST', payload: JSON.parse(storedList) });
     }
   }, [dispatch]);
